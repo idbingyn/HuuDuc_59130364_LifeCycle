@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat spf = new SimpleDateFormat("HH:mm:ss");
         String strDate = spf.format(new Date());
         txtTG.setText(strDate);
+        Toast.makeText (getApplicationContext (), "LifeCycle" , Toast.LENGTH_SHORT) .show ();
     }
 
     @Override
